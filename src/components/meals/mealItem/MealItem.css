@@ -1,0 +1,19 @@
+.single-meal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #ccc;
+}
+
+.meal-description {
+  font-style: italic;
+}
+
+.meal-price {
+  color: #ad5502;
+  font-size: 20px;
+  margin-top: 4px;
+  font-weight: bold;
+}

@@ -1,0 +1,22 @@
+.summery {
+  width: 90%;
+  max-width: 720px;
+  background-color: #383838;
+  margin: auto;
+  position: relative;
+  margin-top: -160px;
+  border-radius: 14px;
+  color: white;
+  padding: 1rem;
+  box-shadow: 0 1px 18px 10px rgba(0, 0, 0, 0.25);
+}
+
+.summery h2 {
+  font-size: 2rem;
+  margin-bottom: 26px;
+  text-align: center;
+}
+
+.summery p:first-of-type {
+  margin-bottom: 25px;
+}

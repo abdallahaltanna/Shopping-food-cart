@@ -1,0 +1,64 @@
+.backdrop {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 20;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.modal {
+  position: fixed;
+  top: 10vh;
+  max-height: 500px;
+  left: 5%;
+  width: 85%;
+  background-color: white;
+  padding: 16px;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  z-index: 30;
+  animation: slide-down 300ms ease-out forwards;
+  overflow-y: auto;
+}
+
+.modal::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.modal::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 14px;
+  box-shadow: inset 0 0 5px rgb(221, 218, 218);
+}
+
+/* Handle */
+.modal::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 14px;
+}
+
+/* Handle on hover */
+.modal::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+@media (min-width: 768px) {
+  .modal {
+    width: 640px;
+    left: calc(50% - 360px);
+  }
+}
+
+@keyframes slide-down {
+  from {
+    opacity: 0;
+    transform: translateY(-3rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
